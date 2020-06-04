@@ -52,7 +52,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
      Message: '.$message.'
     ';
     // send the mail
-    $sent = mail("youtube@erikthiart.com", "Contact form submission", $message);
+    $sent = mail("youtube@erikthiart.com", "Contact form submission", $mail_body);
     if($sent) {
       $confirm_message = 'Thank you for your message, '.$first_name.' - we have received it sucessfully.';
     } else {
